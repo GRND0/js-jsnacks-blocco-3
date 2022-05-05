@@ -46,7 +46,7 @@ function sommaElementi(array) {
 return somma
 }*/
 
-const squadre = [
+/*const squadre = [
     {
         "nome": "Juventus",
         "punti" : 0 ,
@@ -64,15 +64,43 @@ const squadre = [
     },
 ];
 
-squadre["punti"] = numeroRandom(1,100) ;
-squadre["falli"] = numeroRandom(1,100) ;
+squadre.forEach(squadre => {
+    const puntiRandom = numeroRandom(1,100) ;
+    const falliRandom = numeroRandom(1,100) ;
+
+    squadre.punti = puntiRandom
+    squadre.falli = falliRandom
+} )
+
+
 
 console.log(squadre);
 
 
 
-
-
 function numeroRandom(max, min) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+}*/
+
+
+
+
+
+
+
+
+
+const numeriDaStampare = [1,2,3,4,5,6,7,8,9,10]; 
+numeriDaStampare.forEach(pariDispari);
+
+
+numeriDaStampare.forEach(numero => {
+    (numero % 2 === 0) ? contenitorePari.innerhtml += '${numero}' : contenitoreDispari.innerhtml += '${numero}' ;
+})
+
+
+
+
+
+
+
